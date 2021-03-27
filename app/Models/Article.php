@@ -14,6 +14,7 @@ class Article extends Model
         'author_id',
         'title',
         'body',
+        'created_at',
     ];
 
    

@@ -10,17 +10,19 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
+          
           <li class="nav-item">
-            <a class="nav-link" href="">Pergaulan Bebas</a>
+            <a class="nav-link" href="{{route('post.kategori')}}">Pergaulan bebas</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('post.sexual')}}">Pelecehan Sexual</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Pelecehan Sexual</a>
+            <a class="nav-link" href="{{route('post.pencegahan')}}">Tips Pencegahan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Tips Pencegahan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/map">Peta Pergaulan Bebas</a>
+            <a class="nav-link" href="{{route('post.map')}}">Peta Pergaulan Bebas</a>
           </li>
         </ul>
       </div>

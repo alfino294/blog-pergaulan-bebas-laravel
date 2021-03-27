@@ -15,7 +15,7 @@
     </div>
   </header>
 <div class="row">
-    <div class="col-md-8" style='margin-left:220px;'>
+    <div class="col-md-8" style='margin-left:16%;'>
       <div class="card">
           <div class="card-header bg-dark text-white">
               Peta Persebaran Pergaulan Bebas

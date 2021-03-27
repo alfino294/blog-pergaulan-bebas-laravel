@@ -10,9 +10,12 @@ class MapLocation extends Component
 
     public $long,$lat;
     public $geoJson;
+  
 
     private function loadLocations(){
         $locations = Location::orderBy('created_at', 'desc')->get();
+       
+        
 
         $customLocations = [];
         
@@ -40,12 +43,17 @@ class MapLocation extends Component
 
         $geoJson = collect($geoLocations)->toJson();
         $this->geoJson = $geoJson;
+        
+        
     }
-    
 
+
+    
+   
     public function render()
     {
         $this->loadLocations();
+  
         return view('livewire.map-location');
     }
 }

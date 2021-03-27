@@ -27,21 +27,20 @@
         <div class="post-preview">
           <a href="{{route('post.detail',$post->id)}}">
           <img class="poto" src="{{ asset('storage/'.$post->image)}}" style="width:300px; float:left; padding-right:20px;">
-            <h2 class="post-title">
+            <h3 style="margin-top:40px;">
             {{$post->title}}
-            </h2>
+            </h3>
           </a>
-          <p class="post-meta">Posted by
-            <a> {{$post->author_id}}</a>
-            on   {{date('d M Y',strtotime($post->created_at))}}</p>
-          </div>
+          <p class="post-meta">
+            create   {{date('d M Y',strtotime($post->created_at))}}</p>
+        </div>
       </div>
-
-      
-</div>
-@endforeach  
     </div>
- 
+@endforeach 
+    </div>
+    <div style="margin-left:80%;">
+    {{ $posts->links() }}
+    </div>
 
      
   @endsection
